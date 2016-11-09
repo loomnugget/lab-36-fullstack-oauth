@@ -1,9 +1,6 @@
 <main class="landing">
 
 
-  <a ng-href="{{homeCtrl.googleAuthURL}}"> Login with Google</a>
-
-
   <div class="join-container"
     ng-if="landingCtrl.showSignup">
     <div class="join-inner-container">
@@ -13,9 +10,10 @@
         ng-click="landingCtrl.showSignup=false">
         Login
       </a>
-      <a ng-href="{{homeCtrl.googleAuthURL}}" ng-click="landingCtrl.showSignup=false"> Login with Google</a>
     </div>
   </div>
+
+  <button class="btn"><a ng-href="{{homeCtrl.googleAuthURL}}"> Login with Google</a></button>
 
   <div class="join-container"
     ng-if="!landingCtrl.showSignup">

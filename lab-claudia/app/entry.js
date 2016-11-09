@@ -21,7 +21,13 @@ const ngFileUpload = require('ng-file-upload');
 
 // Create angular module
 // Add everything we need to module
-const demoApp = angular.module('demoApp', [ngTouch, ngAnimate, uiRouter, ngFileUpload]);
+const demoApp = angular.module(camelcase(__TITLE__), [ngTouch, ngAnimate, uiRouter, ngFileUpload]);
+
+// create angular module
+// set up $rootScope globals
+demoApp.run(['$rootScope', function($rootScope){
+  $rootScope.title = __TITLE__;
+}]);
 
 // WHAT DOES REQUIRE.CONTEXT DO?
 //////////////////////////////////////
