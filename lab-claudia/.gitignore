@@ -1,6 +1,6 @@
 #Other
 db
-.env
+*.env
 build
 coverage
 html-report

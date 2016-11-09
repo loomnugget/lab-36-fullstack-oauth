@@ -16,12 +16,12 @@ const pascalcase = require('pascalcase');
 const ngTouch = require('angular-touch'); // Dependency of bootstrap
 const ngAnimate = require('angular-animate'); // Dependency of bootstrap
 const uiRouter = require('angular-ui-router');
-const uiBootstrap = require('angular-ui-bootstrap'); // Need touch and animate to use
+//const uiBootstrap = require('angular-ui-bootstrap'); // Need touch and animate to use
 const ngFileUpload = require('ng-file-upload');
 
 // Create angular module
 // Add everything we need to module
-const demoApp = angular.module('demoApp', [ngTouch, ngAnimate, uiRouter, uiBootstrap, ngFileUpload]);
+const demoApp = angular.module('demoApp', [ngTouch, ngAnimate, uiRouter, ngFileUpload]);
 
 // WHAT DOES REQUIRE.CONTEXT DO?
 //////////////////////////////////////
